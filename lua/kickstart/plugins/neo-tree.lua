@@ -14,6 +14,9 @@ require('neo-tree').setup {
     window = {
       mappings = {
         ['\\'] = 'close_window',
+        ['E'] = 'expand_all_nodes',
+        ['e'] = 'expand_all_subnodes',
+        ['W'] = 'toggle_auto_expand_width',
       },
     },
   },
