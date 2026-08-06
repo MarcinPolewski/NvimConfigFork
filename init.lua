@@ -977,6 +977,7 @@ do
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   require 'custom.plugins.nvim-java'
+  require 'custom.plugins.render-markdown'
 end
 
 -- The line beneath this is called `modeline`. See `:help modeline`
