@@ -7,6 +7,10 @@ lint.linters_by_ft = {
   markdown = { 'markdownlint' }, -- Make sure to install `markdownlint` via mason / npm
 }
 
+-- Keep markdownlint quiet: no end-of-line virtual text, no underline.
+-- Issues still show in the sign column; use `[d`/`]d` or `<leader>q` to see them.
+vim.diagnostic.config({ virtual_text = false, underline = false }, lint.get_namespace 'markdownlint')
+
 -- To allow other plugins to add linters to require('lint').linters_by_ft,
 -- instead set linters_by_ft like this:
 -- lint.linters_by_ft = lint.linters_by_ft or {}
